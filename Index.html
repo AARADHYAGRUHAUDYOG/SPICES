@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AARADHYA GRUHA UDYOG</title>
+<!--<link rel="icon" href="C:/images/logo.png" type="image/png" /><-->
+    <style>
+
+        body {
+            font-family: Cambria, sans-serif;
+            background: #f5f0e6;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #8b0000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header p {
+            font-family: Cambria, serif;
+            font-size: 18px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            background: #b22222;
+            padding: 12px 0;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        nav a {
+            color: #ADD8E6;
+            text-decoration: none;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #ffe4c4;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 30px 20px;
+            border-radius: 12px;
+        }
+        #home {
+            background: #fff8f0;
+        }
+        #about {
+            background: #fff0f5;
+        }
+        #products {
+            background: #f0fff0;
+        }
+        #contact {
+            background: #f0f8ff;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 32px;
+            color: #8b0000;
+            font-family: 'Playfair Display', serif;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #fff3e6;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            text-align: center;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+        .card-description {
+            font-size: 14px;
+            margin-top: 8px;
+            color: #555;
+            font-family: 'Roboto', sans-serif;
+        }
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            background: #333;
+            color: #fff;
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        !.whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: #fff;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            z-index: 100;
+            transition: 0.3s;
+        }
+        .whatsapp:hover {
+            transform: scale(1.1);
+        }
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!--img src="C:/images/logo.png" alt="Aaradhya Gruha Udyog Logo" style="height:70px; margin-bottom:10px;" /-->
+        <h1>AARADHYA GRUHA UDYOG SPICES</h1>
+        <p>Premium Quality Spices to Elevate Your Culinary Experience</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container" id="home">
+        <h1 class="section-title">Welcome to Aaradhya Gruha Udyog Spices</h1>
+        <p>Discover the rich aroma and authentic flavors of our handpicked masalas. Each spice is carefully selected to bring freshness, quality, and taste to your kitchen. From traditional Indian staples to exotic blends, we provide everything a chef or home cook could desire.</p>
+    </div>
+
+    <div class="container" id="about">
+        <h2 class="section-title">About Us</h2>
+        <p>Aaradhya Gruha Udyog has been a trusted provider of premium spices for over a decade. Our mission is to deliver aromatic, high-quality masalas that elevate the flavor of every dish. We work closely with farmers and suppliers to ensure purity, freshness, and authenticity in every packet we offer.</p>
+        <p>With a commitment to quality and customer satisfaction, our spices have become a staple in kitchens across India. Whether you're preparing traditional curries, street food favorites, or gourmet dishes, our spices brings the essence of spices to life.</p>
+    </div>
+
+    <div class="container" id="products">
+        <h2 class="section-title">Our Spices Products</h2>
+        <div class="grid">
+            <div class="card">Turmeric Powder<div class="card-description">Bright yellow spice, perfect for curries and enhancing immunity.</div></div>
+            <div class="card">Red Chilli Powder<div class="card-description">Adds heat and color, essential for spicy Indian dishes.</div></div>
+            <div class="card">Coriander Powder<div class="card-description">Earthy flavor to enrich gravies, soups, and marinades.</div></div>
+            <div class="card">Cumin Powder<div class="card-description">Nutty aroma, ideal for seasoning and spice blends.</div></div>
+            <div class="card">Garam Masala<div class="card-description">Traditional blend for a warm, aromatic touch in every dish.</div></div>
+            <div class="card">Kitchen King Masala<div class="card-description">Versatile masala for everyday curries and vegetable preparations.</div></div>
+            <div class="card">Chicken Masala<div class="card-description">Enhances meat dishes with rich, savory flavors.</div></div>
+            <div class="card">Meat Masala<div class="card-description">Perfect for mutton and lamb dishes with robust aroma.</div></div>
+            <div class="card">Pav Bhaji Masala<div class="card-description">Spice mix to make the famous street food taste authentic.</div></div>
+            <div class="card">Chaat Masala<div class="card-description">Tangy and spicy powder to elevate snacks and salads.</div></div>
+            <div class="card">Black Pepper Powder<div class="card-description">Sharp, pungent flavor for seasoning and medicinal benefits.</div></div>
+            <div class="card">Fennel (Saunf) Powder<div class="card-description">Sweet and refreshing, perfect for digestion and seasoning.</div></div>
+            <div class="card">Cardamom Powder<div class="card-description">Fragrant spice used in desserts, chai, and savory dishes.</div></div>
+            <div class="card">Clove Powder<div class="card-description">Warm, aromatic spice used in curries, teas, and rice dishes.</div></div>
+            <div class="card">Cinnamon Powder<div class="card-description">Sweet and woody aroma, perfect for desserts and curries.</div></div>
+            <div class="card">Nutmeg Powder<div class="card-description">Distinct nutty flavor for baking, desserts, and curries.</div></div>
+            <div class="card">Asafoetida (Hing)<div class="card-description">Strong aroma, enhances lentils and digestive dishes.</div></div>
+            <div class="card">Dry Ginger Powder<div class="card-description">Adds warmth and zest to curries and teas.</div></div>
+            <div class="card">Garlic Powder<div class="card-description">Rich, pungent flavor for marinades and gravies.</div></div>
+            <div class="card">Mango Powder (Amchur)<div class="card-description">Tangy spice perfect for chutneys and curries.</div></div>
+            <div class="card">Sambar Masala<div class="card-description">Authentic South Indian spice blend for sambar preparation.</div></div>
+            <div class="card">Rasam Powder<div class="card-description">Adds aromatic and tangy flavor to rasam and soups.</div></div>
+        </div>
+    </div>
+
+    <div class="container" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <p>Email: Aaradhyagruhaudyog@gmail.com</p>
+        <p>Phone: +91-8600786501</p>
+        <p>Address: 503, Ratan Residency, Chanakyapuram Road, Hudkeshwar Road, Nagpur 440034, Maharashtra, India</p>
+        <p>We love hearing from our customers! Reach out for inquiries, bulk orders, or any questions about our products.</p>
+    </div>
+
+    <a href="https://wa.me/919XXXXXXXXX" class="whatsapp" target="_blank">&#x2709;</a>
+
+    <footer>
+        <p>© 2025 Aaradhya Gruha Udyog - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
